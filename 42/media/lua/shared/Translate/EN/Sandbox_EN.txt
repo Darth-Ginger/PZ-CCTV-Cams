@@ -1,0 +1,12 @@
+Sandbox_EN = {
+    Sandbox_CCTVCams_Options_Title = "CCTV Camera Options",
+
+    Sandbox_CCTVCams_LinkDistance = "Link Distance",
+    Sandbox_CCTVCams_LinkDistance_Tooltip = "The distance at which the camera will be linked to a monitor.",
+
+    Sandbox_CCTVCams_LinkCount = "Link Count",
+    Sandbox_CCTVCams_LinkCount_Tooltip = "The number of cameras that can link to a monitor.",
+
+    Sandbox_CCTVCams_camFOV = "FOV",
+    Sandbox_CCTVCams_camFOV_Tooltip = "The field of view of the camera.",
+}

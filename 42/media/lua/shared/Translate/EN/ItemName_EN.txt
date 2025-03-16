@@ -1,0 +1,5 @@
+ItemName = {
+    ItemName_CCTVMonitor = "CCTV Monitor",
+    ItemName_SecurityCameraBullet = "Security Bullet Camera",
+    ItemName_SecuritySystemDesign = "Security System Design",
+}

@@ -1,0 +1,100 @@
+module Base
+{
+
+/****** Monitor Recipe ******/
+
+craftRecipe BuildCCTVMonitor
+	{
+        timedAction = MakingElectrical,
+		Time = 160,
+		NeedToBeLearn = True,
+		SkillRequired = Electrical:2,
+		Tags = AnySurfaceCraft,
+        category = Security,
+		AutoLearnAny = Electrical:8,
+		inputs
+		{
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+			item 2 [Base.Screws] mode:destroy,
+			item 3 [Base.ElectronicsScrap] mode:destroy,
+			item 1 [Base.DuctTape] mode:destroy,
+            item 2 [Base.Wire] mode:destroy,
+            item 1 [Base.GlassPanel] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.CCTVMonitor,
+		}
+	}
+
+craftRecipe ConvertCCTVMonitor
+	{
+        timedAction = MakingElectrical,
+		Time = 160,
+		NeedToBeLearn = True,
+		SkillRequired = Electrical:2,
+		Tags = AnySurfaceCraft,
+        category = Security,
+		AutoLearnAny = Electrical:8,
+		inputs
+		{
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 [Base.TvBlack;Base.TvAntique;Base.TvWideScreen]
+			item 1 [Base.Screws] mode:destroy,
+			item 1 [Base.ElectronicsScrap] mode:destroy,
+			item 1 [Base.DuctTape] mode:destroy,
+            item 1 [Base.Wire] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.CCTVMonitor,
+		}
+	}
+
+
+/****** Camera Recipes ******/
+
+
+craftRecipe MakeSecurityCameraBullet
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		Tags = AnySurfaceCraft,
+        category = Security,
+        AutoLearnAny = Electrical:8,
+		inputs
+		{
+            item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.Screws] mode:destroy,
+			item 1 [Base.ElectronicsScrap] mode:destroy,
+			item 1 [Base.DuctTape] mode:destroy,
+            item 1 [Base.Wire] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.SecurityCameraBullet,
+		}
+
+	}
+
+
+/****** Recipe Magazine ******/
+
+
+	item SecuritySystemDesign
+	{
+		DisplayName = Security System Design,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineElectronics03,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeSecurityCameraBullet;BuildCCTVMonitor,
+        StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+		Tags = Magazine,
+	}
+
+}

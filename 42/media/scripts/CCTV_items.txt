@@ -1,0 +1,34 @@
+module Base
+{
+
+/****** Monitor ******/
+
+item CCTVMonitor
+	{
+		DisplayName = CCTV Monitor,
+		DisplayCategory = Security,
+		Type = Moveable,
+		Weight = 10,
+		Icon = Television, /**** CCTVMonitor *****/
+        IsPortable		= FALSE,
+		IsTelevision		= TRUE,
+		UseWhileEquipped = FALSE,
+        WorldObjectSprite	= appliances_television_01_4,
+		OnCreate = CCTVCams.OnCreateDevice,
+	}
+
+/****** Cameras ******/
+
+item SecurityCameraBullet
+	{
+		DisplayName = Security Bullet Camera,
+		DisplayCategory = Security,
+		Type = Moveable,
+		Weight = 0.5,
+		Icon = SecurityCameraBullet,
+		WorldStaticModel = SecurityCameraBullet,
+		OnCreate = CCTVCams.OnCreateDevice,
+	}
+	
+
+}

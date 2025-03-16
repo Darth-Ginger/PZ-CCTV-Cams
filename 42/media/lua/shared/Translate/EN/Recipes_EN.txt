@@ -1,0 +1,5 @@
+Recipe_EN = {
+    Recipe_BuildCCTVMonitor = "Build CCTV Monitor",
+    Recipe_ConvertCCTVMonitor = "Convert CCTV Monitor",
+    Recipe_MakeSecurityCameraBullet = "Make Security Bullet Camera",
+}
